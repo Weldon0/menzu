@@ -1,0 +1,478 @@
+body
+{
+    margin:0;
+    padding:0;
+    width:100%;
+}
+html
+{
+
+    font-size:12px;
+    font-family:"微软雅黑", "Microsoft Yahei", Arial, Helvetica, sans-serif, "宋体";
+}
+*
+{
+    box-sizing:border-box;
+    font-weight:200;
+}
+p
+{
+    /*line-height:4rem;*/
+}
+ul
+{
+    margin:0;
+    padding:0;
+    list-style:none;
+}
+#full, .wuSection
+{
+    width:100%;
+}
+.wuSection header
+{
+    /*background-color:red;*/
+    width:70%;
+    height:100px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin:0 auto;
+}
+.wuSection .meizuLogo
+{
+    width:100px;
+    height:20px;
+    background-image:url(../img/logo-new_294da7f.png);
+    background-size:100% 100%;
+}
+.wuSection .shopList ul
+{
+    display:flex;
+}
+.wuSection ul li
+{
+    margin-left:3rem;
+    font-size:0.9rem;
+}
+.wuSection .userLi
+{
+    display:flex;
+    align-items:baseline;
+}
+.wuSection .userLi img:nth-of-type(2)
+{
+    width:20px;
+    margin-left:0.5rem;
+}
+#meizuFixed
+{
+    background-color:#D9D9D9;
+    width:100%;
+    position:fixed;
+    top:100px;
+    opacity:0.9;
+    z-index:1000;
+}
+#meizuFixed>section
+{
+    /*margin-top:50px;*/
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    width:70%;
+    margin:18px auto;
+}
+#meizuFixed div:nth-of-type(1)
+{
+    background-image: url(//www3.res.meizu.com/static/cn/widget/subnav/images/pro6plus_logo_b1eb188.png);
+    width:120px;
+    height:15px;
+    background-size:100% 100%;
+}
+#meizuFixed .content>span
+{
+    margin-left:1rem;
+}
+#meizuFixed .content span:nth-of-type(1)
+{
+    font-size:0.8rem;
+    color:#909090;
+}
+#meizuFixed .content span:nth-of-type(2)
+{
+
+    display: inline-block;
+    width: 14px;
+    height: 12px;
+    background-repeat: no-repeat;
+    background-image: url(//www3.res.meizu.com/static/cn/widget/subnav/images/subnav-icon2_791e8f0.png);
+    /*width:50px;*/
+    /*height:50px;*/
+    background-position:90% 50%;
+    /*background-size:100% 100%;*/
+}
+#meizuFixed .content span:nth-of-type(3)
+{
+    display:inline-block;
+    width:90px;
+    height:35px;
+    text-align:center;
+    line-height:35px;
+    background-color:#3DB1FA;
+    font-size:0.8rem;
+    color:white;
+    letter-spacing:0.2rem;
+}
+#wufirstPage>div
+{
+    z-index:-1;
+    /*opacity:0.5;*/
+    position:relative;
+    width:100%;
+    height:100%;
+    /*background-image:url(../img/slogan-np_87141dc.jpg);*/
+    filter:alpha(opacity=0);
+    background-color:black;
+    background-size:100% 100%;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+}
+#wufirstPage .slogan-logo
+{
+    width:15rem;
+    opacity:0;
+    z-index:5;
+}
+#wufirstPage p
+{
+    color:white;
+    font-size:2rem;
+    font-weight:200;
+    opacity:0;
+    z-index:1000;
+
+}
+#wufirstPage>div>*
+{
+    margin-right:50rem;
+}
+#wufirstPage>div .absoluteImg
+{
+    opacity:0;
+    width:35%;
+    position:absolute;
+    /*left:calc(50% - 1rem);*/
+    left:80%;
+    top:20%;
+    z-index:5;
+}
+#wufirstPage #content .bgimg
+{
+    opacity:0;
+    width:100%;
+    top:0;
+    left:0;
+    position:absolute;
+    z-index:-1;
+}
+.section
+{
+    /*transform:rotateX(130deg);*/
+}
+
+
+#thirdPage .content
+{
+    width:100%;
+    height:100%;
+    background-image:url(../img/feel_f0c4383.jpg);
+    background-size:100% 100%;
+}
+#thirdPage .content
+{
+    width:100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+#thirdPage .content .detail
+{
+    margin-top:5rem;
+    color:rgb(51,51,51);
+    width:20rem;
+    height:40rem;
+    margin-right:30%;
+}
+#thirdPage .content .detail h1
+{
+    font-weight:200;
+    font-size:2rem;
+    opacity:0;
+}
+#thirdPage .content .detail p
+ {
+    margin-top:5rem;
+    line-height:1.8rem;
+    font-size:1.5rem;
+    opacity:0;
+ }
+.h1AnimateUp
+{
+    transition:1.5s;
+    transform:translateY(-50px);
+}
+.pAnimateUP
+{
+    transition:2s;
+    transform:translateY(-80px);
+}
+#forthPage
+{
+    width:100%;
+    height:100%;
+    background-image:url(../img/cpu_0c956e4.jpg);
+    background-size:100% 100%;
+
+}
+#forthPage .cpu
+{
+    width:100%;
+    height:100%;
+    /*height:10rem;*/
+    color:white;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+    margin-top:5rem;
+}
+#forthPage .cpu p
+{
+    margin-bottom:5rem;
+    width:30%;
+    text-align:center;
+    font-size:1.5rem;
+    line-height:2rem;
+    opacity:0;
+}
+#forthPage .cpu>h1
+{
+    font-weight:200;
+    font-size:3rem;
+    margin-bottom:3rem;
+    opacity:0;
+}
+.cpu img
+{
+    margin-bottom:20rem;
+    opacity:0;
+    cursor:pointer;
+}
+.cpu img:hover
+{
+    transition:2s;
+    transform:rotateZ(180deg);
+}
+#fifthPage
+{
+    position:relative;
+    width:100%;
+    height:100%;
+    background-image:url(../img/camera_a218b21.jpg);
+    background-size:100% 100%;
+}
+#fifthPage .camera>img
+{
+    position:absolute;
+    width:30%;
+    left:50%;
+    bottom:0;
+}
+#fifthPage .camera .inner
+{
+    margin-top:10rem;
+}
+
+#fifthPage .camera
+{
+    width:100%;
+    height:100%;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+
+}
+#fifthPage .camera>*
+{
+    margin-right:50rem;
+}
+
+#fifthPage .camera .inner>*
+{
+    width:20rem;
+}
+
+#fifthPage .camera .iconAdd
+{
+    width:15%;
+}
+#fifthPage .camera .inner>h1
+{
+    font-size:2.3rem;
+    font-weight:200;
+    color:rgb(51,51,51);
+    letter-spacing:0.5rem;
+}
+#fifthPage .camera .inner>p
+{
+    color:rgb(51,51,51);
+    line-height:1.4rem;
+}
+#fifthPage ul
+{
+    display:flex;
+    flex-wrap:wrap;
+
+}
+#fifthPage ul li
+{
+    width:50%;
+    opacity:0;
+}
+#fifthPage ul li h2
+{
+    font-weight:200;
+}
+#fifthPage ul li .divide-line
+{
+    width:20%;
+    border-top:1px solid rgb(51,51,51);
+}
+.cameraUp
+{
+    transition:2s;
+    transform:translateY(-100px);
+}
+#fifthPage .inner>*
+{
+    opacity:0;
+}
+#fifthPage .inner>ul
+{
+    opacity:1;
+}
+#sixthPage .inner
+{
+    width:100%;
+    height:100%;
+    position:relative;
+    background-image:url(../img/mtouch_c32ad0f.jpg);
+    background-size:100% 100%;
+    /*background-size:cover;*/
+}
+#sixthPage .inner>img
+{
+    position:absolute;
+    width:8%;
+    right:37%;
+}
+#sixthPage .inner .mtouch7
+{
+    bottom:20%;
+    z-index:1;
+}
+#sixthPage .inner .mtouch6
+{
+    bottom:25%;
+    z-index:2;
+}
+#sixthPage .inner .mtouch5
+{
+    width:4%;
+    right:38.5%;
+    bottom:30%;
+    z-index:3;
+}
+#sixthPage .inner .mtouch4
+ {
+    width:10%;
+    right:34%;
+    bottom:28%;
+    z-index:4;
+ }
+#sixthPage .inner .mtouch3
+{
+    bottom:35%;
+    z-index:5;
+}
+#sixthPage .inner .mtouch2
+{
+    right:38%;
+    width:6%;
+    bottom:40%;
+    z-index:6;
+}
+#sixthPage .inner .mtouch1
+{
+    right:38%;
+    width:5%;
+    bottom:45%;
+    z-index:7;
+}
+#sixthPage .inner .content
+{
+    position:absolute;
+    width:25%;
+    color:white;
+    top:40%;
+    left:25%;
+}
+#sixthPage .inner .content h1
+{
+    font-weight:200;
+}
+#sixthPage .inner .content p
+{
+    line-height:1.5rem;
+}
+#sixthPage .inner .content>*
+{
+    opacity:0;
+}
+.transformDown
+{
+    /*transform: rotateX(90deg);*/
+    opacity:0;
+    transition:0.6s ease-out;
+    transform:rotateX(90deg) translateY(300px);
+    transform-origin:0 100%;
+    z-index:-1000;
+    height:500%;
+}
+.transformUp
+{
+    opacity:0.1;
+    transition:1.3s;
+    transform:rotateX(60deg);
+    transform-origin:0 0;
+    z-index:-1000;
+}
+#full
+{
+    transform-style:preserve-3d;
+    perspective: 10000px;
+    perspective-origin: 50% 300%;
+}
+
+
+
+
+
+
+
+
+
